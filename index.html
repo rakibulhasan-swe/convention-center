@@ -17,32 +17,35 @@
 </head>
 <body>
 
-    <header class="pb-4">
-        <nav class="navbar navbar-expand-lg bg-light px-5">
+    <header class="pb-4" id="home">
+        <nav class="navbar navbar-expand-lg bg-light px-5 sticky-top">
             <div class="container-fluid">
-              <a class="navbar-brand fw-bold" href="#">Abacus Convention Center</a>
+              <a class="navbar-brand fw-bold text-primary" href="#">Abacus Convention Center</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto p-3 mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active fw-semibold" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fw-semibold" aria-current="page" href="#">About</a>
+                    <a class="nav-link fw-semibold" aria-current="page" href="#package">Package</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fw-semibold" aria-current="page" href="#">Contact US</a>
+                    <a class="nav-link fw-semibold" aria-current="page" href="#contact">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fw-semibold" aria-current="page" href="#">Subscribe</a>
+                    <a class="nav-link fw-semibold" aria-current="page" href="#review">Review</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" aria-current="page" href="#faq">FAQ</a>
                   </li>
                   
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-dark fw-bold" type="submit">Search</button>
+                  <button class="btn btn-primary fw-bold" type="submit">Search</button>
                 </form>
               </div>
             </div>
@@ -91,8 +94,8 @@
                 </div>
             </div>
         </section>
-
-        <section class="container py-5">
+        <!-- packages section  -->
+        <section class="container py-5" id="package">
             <h3 class="text-center fw-bold fs-1 pb-5">Our <span class="text-primary">Package's</span></h3>
             <div class="row pt-5">
                 <div class="col-md-3 col-12">
@@ -106,7 +109,7 @@
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i>Event support</p>
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i> Decoration design</p>
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i>Pay day bill</p>
-                          <button class="btn btn-light text-primary fw-bolder w-100 py-3">Choose plan</button>
+                          <button class="btn btn-light text-primary fw-bolder w-100 py-3 card-hover">Choose plan</button>
                         </div>
                       </div>
                 </div>
@@ -121,7 +124,7 @@
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i>Management support</p>
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i>Decoration design</p>
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i>Billed as shift</p>
-                          <button class="btn btn-light text-primary fw-bolder w-100 py-3">Choose plan</button>
+                          <button class="btn btn-light text-primary fw-bolder w-100 py-3 card-hover">Choose plan</button>
                         </div>
                       </div>
                 </div>
@@ -151,7 +154,7 @@
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i>Event support</p>
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i>Decoration design</p>
                           <p class="card-text"><i class="fas fa-check-circle pe-1 text-primary"></i>Pay day bill</p>
-                          <button class="btn btn-light text-primary fw-bolder w-100 py-3">Choose plan</button>
+                          <button class="btn btn-light text-primary fw-bolder w-100 py-3 card-hover">Choose plan</button>
                         </div>
                       </div>
                 </div>
@@ -159,7 +162,7 @@
         </section>
 
         <!-- client review section  -->
-        <section class="container py-5">
+        <section class="container py-5" id="review">
             <h3 class="text-center fw-bold fs-2 pb-5">Happy <span class="text-primary">Client's</span> Say</h3>
             <div class="row py-5 gy-5">
                 <div class="col-md-4 col-12">
@@ -193,7 +196,7 @@
         </section>
 
         <!-- accordion FAQ section -->
-        <section class="container py-5">
+        <section class="container py-5" id="faq">
           <h4 class="fw-bold fs-2 text-center pb-5">Frequently <span class="text-primary">Asked</span> Questions</h4>
           <div class="row pt-5 gy-5">
             <div class="col-12 col-lg-6">
@@ -263,6 +266,31 @@
             </div>
           </div>
         </section>
+        <!-- contact section -->
+        <section class="container py-4" id="contact">
+          <h4 class="fw-bold text-center pb-2 fs-2"><span class="text-primary">Contact</span> Us</h4>
+          <div class="row gy-4 py-5">
+              <div class="col-12 col-lg-6">
+                  <iframe class="rounded mobile-res" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.1058310378985!2d90.42099951498192!3d23.77924543457512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c790c05989b9%3A0x76ab985d6fff1b0d!2sMiddle%20Badda%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1652931112009!5m2!1sen!2sbd" width="600" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="col-12 col-lg-6">
+                  <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label fw-bold">Name *</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Md Rakibul Hasan" required>
+                    </div>
+                  <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label fw-bold">Email address *</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label fw-bold">Messsage *</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <button type="reset" class="btn btn-danger text-white">Reset</button>
+                    <button type="reset" class="btn btn-primary text-white"><i class="fas fa-comment pe-1"></i>Message</button>
+              </div>
+          </div>
+      </section>
     </main>
 
      <!-- footer  -->
